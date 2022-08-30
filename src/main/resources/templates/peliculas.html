@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Arriendos</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+	integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<ul class="nav justify-content-end">
+		<li class="nav-item"><a class="nav-link active" href="/home">Destinos</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/peliculavista">Pasajeros</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/arriendos">Añadir destino</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/peliculas">Añadir pasajero</a></li>
+	</ul>
+	<div class="container">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h3>Pasajeros</h3>
+			<form th:action="@{/peliculas/agregar}" method="post"
+				th:object="${pelicula}">
+				<div class="form-group row">
+					<label for="nombre" class="col-4">Nombre</label>
+					<div class="col-8">
+						<input class="form-control" type="text" id="nombre" name="nombre">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="rut" class="col-4">Rut</label>
+					<div class="col-8">
+						<input class="form-control" type="text" id="rut"
+							name="rut">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="edad" class="col-4">Edad</label>
+					<div class="col-8">
+						<input class="form-control" type="number" id="edad"
+							name="edad">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label for="apellido" class="col-4">Apellido</label>
+					<div class="col-8">
+						<input class="form-control" type="text" id="apellido" name="apellido">
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label for="ciudadNatal" class="col-4">Ciudad natal</label>
+					<div class="col-8">
+						<input class="form-control" type="text" id="ciudadNatal" name="ciudadNatal">
+					</div>
+				</div>
+
+
+
+
+
+				<div class="form-group row">
+					<div class="col-sm-12">
+						<button type="submit" class="btn
+btn-primary">Agregar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-sm-2">
+			<p></p>
+		</div>
+	</div>
+</body>
+</html>

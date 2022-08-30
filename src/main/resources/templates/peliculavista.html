@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>pasajeros</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+	integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	crossorigin="anonymous">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" 
+	integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" 
+	crossorigin="anonymous"></script>
+</head>
+<body>
+	<ul class="nav justify-content-end">
+		<li class="nav-item"><a class="nav-link active" href="/home">Destinos</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/peliculavista">Pasajeros</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/arriendos">Añadir destino</a></li>
+		<li class="nav-item"><a class="nav-link active" href="/peliculas">Añadir pasajero</a></li>
+	</ul>
+	<div class="container">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<h3>Pasajeros</h3>
+			<table class="table">
+				<thead class="thead-light">
+					<tr>
+						<th scope="col">Id</th>
+						<th scope="col">Nombre</th>
+						<th scope="col">Rut</th>
+						<th scope="col">Edad</th>
+						<th scope="col">Apellido</th>
+						<th scope="col">Ciudad natal</th>
+
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="pelicula: ${peliculas}">
+						<td th:text="${pelicula.id}" />		
+						<td th:text="${pelicula.nombre}" />			
+						<td th:text="${pelicula.rut}" />
+						<td th:text="${pelicula.edad}" />	
+						<td th:text="${pelicula.apellido}" />
+						<td th:text="${pelicula.ciudadNatal}" />
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-sm-2">
+			<p></p>
+		</div>
+	</div>
+</body>
+</html>
