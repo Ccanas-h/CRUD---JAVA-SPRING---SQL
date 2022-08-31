@@ -6,7 +6,7 @@
 - [x] Debe tener un paginador
 - [x] Se debe poder elegir la cantidad de registros por página.
 - [x] GSe debe poder filtrar el contenido de la tabla por el nombre del producto (Buscar).
-    - [x] GDebe tener un diseño agradable
-    - [x] GSe debe poder almacenar la siguiente información de los productos: Código único,
+    - [x] Debe tener un diseño agradable
+    - [x] Se debe poder almacenar la siguiente información de los productos: Código único,
 nombre único, precio y stock.
     - [x] Se debe poder agregar, quitar y modificar los productos
