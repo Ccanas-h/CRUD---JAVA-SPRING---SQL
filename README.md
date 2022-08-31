@@ -5,7 +5,7 @@
 
 - [x] Debe tener un paginador
 - [x] Se debe poder elegir la cantidad de registros por página.
-- [x] GSe debe poder filtrar el contenido de la tabla por el nombre del producto (Buscar).
+- [x] Se debe poder filtrar el contenido de la tabla por el nombre del producto (Buscar).
     - [x] Debe tener un diseño agradable
     - [x] Se debe poder almacenar la siguiente información de los productos: Código único,
 nombre único, precio y stock.
