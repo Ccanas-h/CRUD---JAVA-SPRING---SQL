@@ -1,7 +1,7 @@
 
 ##   Desafío - Empresa Logistiqal
 
-* Una gran empresa de logística te ha pedido crear una pequeña aplicación que les permita ver la lista de productos que tienen en stock mediante una tabla. Además, te piden que la aplicación cumpla con los siguientes requisitos:* 
+*Una gran empresa de logística te ha pedido crear una pequeña aplicación que les permita ver la lista de productos que tienen en stock mediante una tabla. Además, te piden que la aplicación cumpla con los siguientes requisitos:* 
 
 - [x] El proyecto cuenta con un paginador
 - [x] Se pueden elegir la cantidad de registros por página.
